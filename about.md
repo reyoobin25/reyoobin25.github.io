@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Welcome to this website!
+안녕하세요!
 
-> This website is using [laobubu](http://laobubu.net)'s theme: [EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)
+> 차근차근 공부하기
