@@ -9,13 +9,14 @@ description: >
 # Your information
 email: yoobinlee25@gmail.com
 author: YooBin Lee
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
-profile: Hello world!
+avatar: "//img/lyb.jpg"
+profile: 즐겁게 살자
 #twitter_username: twitter_username
 #github_username:  github_username
 profile_links:
   Email: "mailto:yoobinlee25@gmail.com"
   GitHub: "https://github.com/yoobin2486"
+  Blog : "https://binny.tistory.com/"
   # You can add more profile links above, or edit _includes/sidebar.html 
 
 # Comment Service (Disqus or 多说)
@@ -29,7 +30,6 @@ header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
     Category: /category/
-    Donate: https://laobubu.net/donate.html
 
 permalink: /archivers/:title
 plugins:
