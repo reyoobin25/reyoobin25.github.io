@@ -255,5 +255,11 @@ permalink: /OpenClass/20190822
 
 (생략..)
 
-처음으로 그랜팩토리를 방문했는데 회사 분위기와 자유로움 및 개발자라는 업무에대해 다시 한번 큰 동기부여가 되었고, 행사가 끝이난 뒤에도 남아서 질문들을 받아주셔서 감사했다 :)
+
+
+![](C:\Users\yoobi\Desktop\yoobin2486.github.io\img\naver\naver02.jpg)
+
+![naver03](C:\Users\yoobi\Desktop\yoobin2486.github.io\img\naver\naver03.jpg)
+
+처음으로 그랜팩토리를 방문했는데 자유로운 분위기가 인상적이었다. 세세한 것들 하나하나 준비해주시고 행사가 끝이난 뒤에도 남아서 질문들을 받아주시는 모습에서 배려받는 느낌을 받아 즐겁게 참여할 수 있었다.  :) 똑똑한 개발자가 되고싶다!!!
 
