@@ -257,9 +257,9 @@ permalink: /OpenClass/20190822
 
 
 
-![](C:\Users\yoobi\Desktop\yoobin2486.github.io\img\naver\naver02.jpg)
+![](C:\Users\yoobi\Desktop\yoobin2486.github.io\img\naver01.jpg)
 
-![naver03](C:\Users\yoobi\Desktop\yoobin2486.github.io\img\naver\naver03.jpg)
+![naver02](C:\Users\yoobi\Desktop\yoobin2486.github.io\img\naver02.jpg)
 
 처음으로 그랜팩토리를 방문했는데 자유로운 분위기가 인상적이었다. 세세한 것들 하나하나 준비해주시고 행사가 끝이난 뒤에도 남아서 질문들을 받아주시는 모습에서 배려받는 느낌을 받아 즐겁게 참여할 수 있었다.  :) 똑똑한 개발자가 되고싶다!!!
 
