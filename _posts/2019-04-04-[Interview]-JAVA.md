@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[기술면접 정리] JAVA"
+title: "[interview] JAVA"
 date: 2019-04-04 14:00:00
 categories: interview
 permalink: /interview/java
@@ -8,7 +8,7 @@ permalink: /interview/java
 
 # JAVA 기술 면접 질문 정리
 
-> 지금까지 기술 면접에서 받은 질문들과 자바를 공부하며 중요한 개념이라고 생각한 키워드를 정리하고 설명은 추가해 나갈 예정이다.
+> 지금까지 기술 면접에서 받은 질문들과 자바를 공부하며 중요한 개념이라고 생각한 키워드를 정리하고 설명은 추가해 나가기
 
 - 자바 언어의 특징?
 - 자바 언어 == 객체지향? 
