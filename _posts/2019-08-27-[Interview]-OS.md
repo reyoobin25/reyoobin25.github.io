@@ -8,11 +8,9 @@ permalink: /interview/os
 
 
 
-# Naver Developer Open Class 2019 후기
-
 # CS기본 - 운영체제(OS)
 
-1. <mark>**운영체제**</mark>
+1. **<mark>운영체제</mark>**
 
    - **정의** : 컴퓨터 하드웨어와 컴퓨터 사용자 간의 매개체 역할을 하는 시스템 소프트웨어 
 
@@ -37,7 +35,7 @@ permalink: /interview/os
      - 신뢰성(Reliability) : 운영체제의 오류 등을 줄여서 사용자에게 운영체제의 신뢰성을 높임
      - 사용도(availability) : 명령어 등을 이용해 쉽게 접근할 수 있도록 함
 
-2. <mark>**운영체제 유형**</mark>
+2. **<mark>운영체제 유형</mark>**
 
    - **일괄처리 시스템(batch processing system)**
 
@@ -156,7 +154,7 @@ permalink: /interview/os
 
        <그림출처 : <https://gmlwjd9405.github.io/2017/10/01/basic-concepts-of-development-os.html>>
 
-4. <mark>**멀티 프로세스(multi process)와 멀티 스레드(multi thread)의 차이**</mark>
+4. **<mark>멀티 프로세스(multi process)와 멀티 스레드(multi thread)의 차이</mark>**
 
    - **공통점** : 동시에 두 가지 이상의 루틴을 실행할 수 있는 역할
 
@@ -190,7 +188,7 @@ permalink: /interview/os
 
      <출처 : <https://you9010.tistory.com/136>>
 
-5. <mark>**Thread-safe**</mark>
+5. **<mark>Thread-safe</mark>**
 
    정의
 
@@ -200,7 +198,7 @@ permalink: /interview/os
 
    - Thread-safe를 하기 위해서는 공유 자원에 접근하는 <u>임계영역(critical section)</u>을 동기화 기법으로 제어해줘야 한다. 이를 <u>상호배제</u>하고 하며 이러한 동기화 기법에는 <u>뮤텍스(Mutex)와 세마포어(Semaphore)</u>가 있다.
 
-6. <mark>**프로세스 스케줄링**</mark>
+6. **<mark>프로세스 스케줄링</mark>**
 
    목적 : 응답 시간의 최소화, 오버헤드 최소화, 자원 사용의 균형 유지, 실행의 무한한 지연을 피함
 
@@ -279,7 +277,7 @@ permalink: /interview/os
      - 작업이 끝날 때 따로 이벤트를 감지하고 결과를 받아 그에 따른 추가 작업을 해줘야하기 때문에, 비교적 느릴 수 있다.
      - I/O 작업이 잦고, 빠른 응답속도를 요구하는 프로그램에 적합하다.
 
-8. <mark>**뮤텍스(Mutex)와 세마포어(Semaphore)**</mark>
+8. **<mark>뮤텍스(Mutex)와 세마포어(Semaphore)</mark>**
 
    - **뮤텍스(Mutex)** 
 
@@ -307,7 +305,7 @@ permalink: /interview/os
 
        <출처 : <https://jwprogramming.tistory.com/13>>
 
-9. <mark>**교착상태(Deadlock)**</mark>
+9. **<mark>교착상태(Deadlock)</mark>**
 
    **개념**
 
