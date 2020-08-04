@@ -47,7 +47,7 @@ permalink: /study/java
      			resultList+=",";
      		}
      		System.out.println(resultList);
-     		assertEqua
+     		assertEquals
      ```
 
      ```java
@@ -57,7 +57,7 @@ permalink: /study/java
          .stream() 		  
          .map(String::trim) // 각각의 요소에
          .distinct()        // 각각의 요소 중 중복 제거
-         .collect(Collectors.*joining*(",","","")); // 각각의 요소를 “,”로 연결
+         .collect(Collectors.joining(",","","")); // 각각의 요소를 “,”로 연결
      ```
 
 2. 스트림 API (람다를 활용한 기술들)
