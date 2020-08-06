@@ -47,13 +47,13 @@ permalink: /study/java
      			resultList+=",";
      		}
      		System.out.println(resultList);
-     		assertEquals
+     		assertEquals("123,p321,321_123",resultList);
      ```
 
      ```java
      // 2) 람다로 작성할 경우
      String[]  beforeDistinct = collectionProductCode.split(",");
-     String distinctResult = Arrays.*asList*(beforeDistinct)
+     String distinctResult = Arrays.asList(beforeDistinct)
          .stream() 		  
          .map(String::trim) // 각각의 요소에
          .distinct()        // 각각의 요소 중 중복 제거
