@@ -75,22 +75,22 @@ permalink: /study/java
      
      // 필터링 적용
      @Test
-     	public void 필터테스트() {
-     		List<Person> list = Arrays.asList(new Person("a",5),new Person("b",11));
-     		list.stream().filter(p->p.age > 10).forEach(System.out::println);
-     	}
+     public void 필터테스트() {
+     	List<Person> list = Arrays.asList(new Person("a",5),new Person("b",11));
+     	list.stream().filter(p->p.age > 10).forEach(System.out::println);
+     }
      private class Person {
      	String name;
      	Integer age;
      	Person(String name, Integer age){
      		this.name = name;
      		this.age = age;
-     	}
+     }
      	
-     	@Override
-     	public String toString() {
-     		return "Person [name=" + name + ", age=" + age + "]";
-     	}
+     @Override
+     public String toString() {
+     	return "Person [name=" + name + ", age=" + age + "]";
+     }
      ```
 
 3. java.time 패키지 : Joda-Time을 이용한 새로운 날짜와 시간 API
