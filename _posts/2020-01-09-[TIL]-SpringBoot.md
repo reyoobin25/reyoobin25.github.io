@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Study] springBoot"
+title: "[TIL] springBoot"
 date: 2020-08-03 14:00:00
-categories: Study
-permalink: /study/springBoot
+categories: TIL
+permalink: /til/springBoot
 ---
 
 # SpringBoot

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Study] Rest API"
+title: "[TIL] Rest API"
 date: 2020-08-09 14:00:00
-categories: Study
-permalink: /study/RestAPI
+categories: TIL
+permalink: /til/RestAPI
 ---
 
 # Rest API
