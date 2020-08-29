@@ -2,8 +2,8 @@
 layout: post
 title: "[Spring] springBoot"
 date: 2020-08-02 14:00:00
-categories: JAVA&JSP&SPRING
-permalink: /JAVA&JSP&SPRING/springBoot
+categories: Java&Jsp&Spring
+permalink: /Java&Jsp&Spring/springBoot
 ---
 
 # SpringBoot
