@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[ETC] Slack 연동"
+title: "[Knowledge] Slack 연동"
 date: 2020-08-08 22:00:00
-categories: ETC
-permalink: /etc/slack
+categories: Knowledge
+permalink: /Knowledge/slack
 ---
 
 # Slack WebHooks 사용해서 메세지 보내기
