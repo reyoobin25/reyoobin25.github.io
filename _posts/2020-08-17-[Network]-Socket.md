@@ -16,7 +16,7 @@ permalink: /Network/Socket
 
 HTTP 프로토콜로 통신하는 경우, 연결이 유지되지 않아 서버에서 먼저 요청을 보내는 것이 불가능하다. Polling, Long Polling, Streaming 방식을 이용해 실시간인 것처럼 구현할 수 있다.
 
-**Web polling**
+## **Web polling**
 
 1. Polling
    - **Client에서 일정 주기마다 요청**을 보내고, 서버는 현재 상태를 응답해주는 방식이다. 
@@ -40,7 +40,7 @@ HTTP 프로토콜로 통신하는 경우, 연결이 유지되지 않아 서버�
 
 이것에서 벗어나 Client와 서버간 양방향 통신이 가능하게 하기 위해 HTML5 표준의 일부로 webSocket이 만들어지게 되었다. 
 
-**Web push**
+## **Web push**
 
 1. WebSocket
    - 웹 서버와 웹 브라우저간 실시간 양방향 통신환경을 제공해주는 실시간 통신기술이다. 위 Polling 방식(요청 - 응답의 형식)과 다르게 양방향으로 원할때 요청을 보낼 수 있으며 오버헤드가 적다.

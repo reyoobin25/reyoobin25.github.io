@@ -92,15 +92,13 @@ public class SomeClass {
 
 
 
-> 참고할만한 사이트
+> **참고할만한 사이트**
 >
 > <https://www.baeldung.com/spring-retry>
 >
 > <https://github.com/Netflix/Hystrix>
 >
-> 참고한 블로그
->
-> https://taetaetae.github.io/2020/03/29/better-rest-template-2-netflix-hystrix/
+> **참고한 블로그**
 >
 > <https://taetaetae.github.io/2020/03/29/better-rest-template-2-netflix-hystrix/>
 >
