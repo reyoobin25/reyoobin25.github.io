@@ -1,0 +1,222 @@
+array(10) {
+  [0]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "1390979"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [1]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "9350802"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [2]=>
+  array(3) {
+    ["productCode"]=>
+    string(8) "10129122"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [3]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "6352866"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [4]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "6067111"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [5]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "1658831"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [6]=>
+  array(3) {
+    ["productCode"]=>
+    string(8) "10523130"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [7]=>
+  array(3) {
+    ["productCode"]=>
+    string(8) "10062957"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [8]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "9350802"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [9]=>
+  array(3) {
+    ["productCode"]=>
+    string(8) "10950504"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+}
+
+========================================>
+
+array(5) {
+  [0]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "1390979"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [1]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "9350802"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [2]=>
+  array(3) {
+    ["productCode"]=>
+    string(8) "10129122"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [3]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "6352866"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+  [4]=>
+  array(3) {
+    ["productCode"]=>
+    string(7) "6067111"
+    ["companyCode"]=>
+    string(5) "ED901"
+    ["companyProductCode"]=>
+    string(13) "1000014646703"
+  }
+}
+count : 5
+
+===========================
+array(5) {
+  [0]=>
+  array(6) {
+    ["PROD_C"]=>
+    string(6) "960063"
+    [0]=>
+    string(6) "960063"
+    ["CMPNY_C"]=>
+    string(5) "ED901"
+    [1]=>
+    string(5) "ED901"
+    ["LINK_PROD_C"]=>
+    string(13) "0000006306404"
+    [2]=>
+    string(13) "0000006306404"
+  }
+  [1]=>
+  array(6) {
+    ["PROD_C"]=>
+    string(7) "2447798"
+    [0]=>
+    string(7) "2447798"
+    ["CMPNY_C"]=>
+    string(5) "ED901"
+    [1]=>
+    string(5) "ED901"
+    ["LINK_PROD_C"]=>
+    string(13) "1000006177386"
+    [2]=>
+    string(13) "1000006177386"
+  }
+  [2]=>
+  array(6) {
+    ["PROD_C"]=>
+    string(7) "3751721"
+    [0]=>
+    string(7) "3751721"
+    ["CMPNY_C"]=>
+    string(5) "ED901"
+    [1]=>
+    string(5) "ED901"
+    ["LINK_PROD_C"]=>
+    string(13) "1000015889017"
+    [2]=>
+    string(13) "1000015889017"
+  }
+  [3]=>
+  array(6) {
+    ["PROD_C"]=>
+    string(7) "3649339"
+    [0]=>
+    string(7) "3649339"
+    ["CMPNY_C"]=>
+    string(5) "ED901"
+    [1]=>
+    string(5) "ED901"
+    ["LINK_PROD_C"]=>
+    string(13) "1000023605751"
+    [2]=>
+    string(13) "1000023605751"
+  }
+  [4]=>
+  array(6) {
+    ["PROD_C"]=>
+    string(7) "3644055"
+    [0]=>
+    string(7) "3644055"
+    ["CMPNY_C"]=>
+    string(5) "ED901"
+    [1]=>
+    string(5) "ED901"
+    ["LINK_PROD_C"]=>
+    string(13) "1000023605752"
+    [2]=>
+    string(13) "1000023605752"
+  }
+}
