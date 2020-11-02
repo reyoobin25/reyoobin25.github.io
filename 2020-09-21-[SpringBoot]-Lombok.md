@@ -12,7 +12,7 @@ permalink: /Java&Jsp&Spring/lombok
 
 
 
-## toString() 무한루프
+## toString() 무한루프 에러
 
 JPA와 같이 ORM을 사용하고 있다면, 부모 객체와 자식 객체의 관계에서 toString()문제가 발생할 수 있다.  
 

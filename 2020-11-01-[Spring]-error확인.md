@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring] error"
+title: "[Spring] error확인"
 date: 2020-11-01 14:00:00
 categories: Java&Jsp&Spring
 permalink: /Java&Jsp&Spring/error
