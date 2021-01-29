@@ -56,9 +56,8 @@ hashCode() : 두 객체가 같은 객체인지 확인하는 메소드이다.
 
 
 
-참고
+[참고]
 
 1.[권남 블로그](https://kwonnam.pe.kr/wiki/java/lombok/pitfall#tostring_equalsandhashcode_%ED%95%84%EB%93%9C%EB%AA%85_%EC%A7%80%EC%A0%95%EC%8B%9C_%EC%98%A4%ED%83%80_%EB%AC%B8%EC%A0%9C)
 
 2.https://projectlombok.org/features/Data
-
