@@ -6,7 +6,7 @@ permalink: /about/
 
 
 
-## Aout me..
+## About me..
 
 - 맛있는거 먹으면서..
 - 재밌는거 하면서..

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Java] Lamda&stream"
+title: "[Java] Lambda&stream"
 date: 2021-02-20 14:00:00
 categories: Java&Jsp&Spring
-permalink: /Java/Lamda-and-stram
+permalink: /Java/Lambda-and-stream
 ---
 
 # Why?
@@ -12,7 +12,7 @@ permalink: /Java/Lamda-and-stram
 
 
 
-## Lamda?
+## Lambda?
 
 람다는 최초로 자바 1.8에서부터 지원을 하기 시작했습니다. 따라서 람다를 사용하고 싶다면, 자바 1.8 이상이 되어야만 한다.
 
