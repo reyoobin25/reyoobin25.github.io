@@ -69,8 +69,7 @@ permalink: /Java/Lamda-and-stram
 
   - 스트림이 짧고 간결하다고하여 무조건 좋다고 할수는 없다!
   - 다만, 그 차이가 굉장히 미비하다고 생각하기 때문에 가독성 측면에서는 stream을 추천한다. (코딩 컨벤션으로 막혀있다면 어쩔수 없다.)
-  - [4d-1](/img/4d-1.PNG)
-  
+  - ![4d-1](/img/4d-1.png)
   
 
 ## Refactoring
@@ -170,7 +169,7 @@ List<Product> usedStream = productList.stream()
                 .filter(product -> product.getBrandName().equals("애플")).collect(Collectors.toList());
 ```
 
-[4d-2](/img/4d-2.PNG)
+![4d-2](/img/4d-2.PNG)
 
 ## 글을 마치며..
 
