@@ -71,7 +71,7 @@ permalink: /Java/Lamda-and-stram
   - 다만, 그 차이가 굉장히 미비하다고 생각하기 때문에 가독성 측면에서는 stream을 추천한다. (코딩 컨벤션으로 막혀있다면 어쩔수 없다.)
   
 
-<img src = "/img/4d-1.png" style=" height: 200px;"></img>
+<img src = "/img/4d-1.png" style=" height: 200px;" class="middle-image"/>
 
 ## Refactoring
 
@@ -170,7 +170,7 @@ List<Product> usedStream = productList.stream()
                 .filter(product -> product.getBrandName().equals("애플")).collect(Collectors.toList());
 ```
 
-<img src = "/img/4d-2.png" style=" height: 200px;"></img>
+<img src = "/img/4d-2.png" style=" height: 200px;" class="middle-image"/>
 
 ## 글을 마치며..
 
