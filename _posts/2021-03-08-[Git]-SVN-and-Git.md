@@ -85,7 +85,7 @@ svn은 변경되는 내용(ccc)만 저장을 한다면 git은 변경된 결과�
 - release : 이번 배포 버전을 준비하는 브랜치
 - hotfix : 출시 버전에서 발생한 버그를 수정하는 브랜치
 
-<img src = "/img/repo_5.JPG" style=" height: 500px;" class="middle-image"/>
+<img src = "/img/repo_6.JPG" style=" height: 500px;" class="middle-image"/>
 
 
 
