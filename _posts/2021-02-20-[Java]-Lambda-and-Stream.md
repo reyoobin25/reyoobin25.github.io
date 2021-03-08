@@ -8,13 +8,13 @@ permalink: /Java/Lambda-and-stream
 
 # Why?
 
-지금까지 회사에서 for문을 이용해서 작성했던 코드를 코드 리팩토링을 하면서 알게된 람다를 써보게 되었습니다. 굉장히 코드가 깔끔해지면서 가독성도 좋아져서 어떤 이점이 있는지도 한번 파헤쳐보고 싶어 이 글을 작성하게 되었습니다.
+지금까지 회사에서 for문을 이용해서 작성했던 코드를 코드 리팩토링을 하면서 알게된 람다를 써보게 되었다. 굉장히 코드가 깔끔해지면서 가독성도 좋아져서 어떤 이점이 있는지도 한번 파헤쳐보고 싶어 이 글을 작성하게 되었다.
 
 
 
 ## Lambda?
 
-람다는 최초로 자바 1.8에서부터 지원을 하기 시작했습니다. 따라서 람다를 사용하고 싶다면, 자바 1.8 이상이 되어야만 한다.
+람다는 최초로 자바 1.8에서부터 지원을 하기 시작했다. 따라서 람다를 사용하고 싶다면, 자바 1.8 이상이 되어야만 한다.
 
 - java 1.8 에서부터 지원한다.
 
@@ -40,7 +40,28 @@ permalink: /Java/Lambda-and-stream
 
 ## stream
 
-- stream은 for문과 달리 메모리를 절약할 수 있다.
+- stream은 자바 8부터 추가된 컬렉션(배열 포함)의 저장 요소를 하나씩 참조해서 람다식으로 처리할 수 있도록 해주는 반복자이다.
+
+- stream과 Iterator반복자와 비교
+
+  - ```java
+    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+    
+    // Iterator 사용
+    Iterator<Integer> itor = list.iterator();
+    while(itor.hasNext()) {
+    		int nReuslt = itor.next();
+      	System.out.println(nReuslt);
+    }
+    		System.out.println();
+    
+    // Stream 사용
+    list.stream().forEach(num->System.out.println(num));
+    ```
+
+- stream과 for문 비교
+
+  - stream은 for문과 달리 메모리를 절약할 수 있다.
 
   - ```java
     // ex1) list에서 짝수를 필터링 하기
@@ -63,7 +84,11 @@ permalink: /Java/Lambda-and-stream
     // 추가적인 메모리가 필요없음
     ```
 
-- 위예 예시에서 볼 수 있듯이 코드가 직관적이게 된다. 
+- 위예 예시에서 볼 수 있듯이 코드가 간결하고 직관적이게 된다. 
+
+- 또한 변수 타입을 따로 선언하지 않는다. 
+
+  - 이것은 런타임 시에 대입되는 값에 따라 자동으로 인식 될 수 있기때문에 람다식에서는 변수의 타입을 일반적으로 업급하지 않는다. 
 
 - [스트림의 성능과 관련된 포스팅](https://jeong-pro.tistory.com/185)
 
@@ -160,8 +185,8 @@ public Product(String productName, int productCode, int price, String isExistSto
 
 
 
-- 위 코드에서 main로직 부분을 stream으로 전환하는 예시 입니다.
-- 가독성이 좋아진 모습을 볼 수 있습니다.
+- 위 코드에서 main로직 부분을 stream으로 전환하는 예시다.
+- 코드가 간결해지면서 가독성이 좋아진 모습을 볼 수 있다.
 
 ```java
 List<Product> usedStream = productList.stream()
@@ -174,5 +199,5 @@ List<Product> usedStream = productList.stream()
 
 ## 글을 마치며..
 
-위 예제들은 가벼운 예제들이라 for문과 stream의 차이가 크게 없다고 생각할 수 있지만 실무에서 가독성이란 것은 굉장히 큰 무기가 될 수 있습니다. 특히 이 예제에서는 필터링하는 부분만 사용했는데, stream에서 사용할 수 있는 함수는 굉장히 많습니다. stream을 적재적소에 잘 사용해 봅시다!
+위 예제들은 가벼운 예제들이라 for문과 stream의 차이가 크게 없다고 생각할 수 있지만 실무에서 가독성이란 것은 굉장히 큰 무기가 될 수 있다. 특히 이 예제에서는 필터링하는 부분만 사용했는데, stream에서 사용할 수 있는 함수는 굉장히 많다. stream을 적재적소에 잘 사용해 보자!
 
