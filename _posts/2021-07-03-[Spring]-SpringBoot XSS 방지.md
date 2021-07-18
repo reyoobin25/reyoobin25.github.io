@@ -11,6 +11,7 @@ permalink: /Java&Jsp&Spring/xss
 웹 애플리케이션을 개발한다면 기본적으로 생각해봐야할 보안으로 XSS(Cross Site Scripting) 방지가 있다. 어떤 방법들로 XSS방지를 할 수 있는지 확인해보고 아래 두 블로그를 참고하여 로컬에서 직접 적용해본 내용을 정리하고 넘어가기 위해 글을 작성하게 되었다.
 
 1) [이동욱님 블로그](https://jojoldu.tistory.com/470)
+
 2) [오명운님 블로그](https://homoefficio.github.io/2016/11/21/Spring%EC%97%90%EC%84%9C-JSON%EC%97%90-XSS-%EB%B0%A9%EC%A7%80-%EC%B2%98%EB%A6%AC-%ED%95%98%EA%B8%B0/)
 
 ## XSS?

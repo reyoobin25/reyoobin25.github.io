@@ -6,7 +6,7 @@ permalink: /about/
 
 
 
-## 개발새발
+## 개발새발..
 
 <img src = "/img/candoit.jpeg" class="middle-image"/>
 
