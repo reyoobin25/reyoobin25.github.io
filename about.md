@@ -8,7 +8,7 @@ permalink: /about/
 
 ## 개발새발
 
-<img src = "/img/candoit.png" class="middle-image"/>
+<img src = "/img/candoit.jpeg" class="middle-image"/>
 
 능이버섯이 되지말자구..
 

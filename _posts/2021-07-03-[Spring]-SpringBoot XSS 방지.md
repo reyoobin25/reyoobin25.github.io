@@ -6,18 +6,22 @@ categories: Java&Jsp&Spring
 permalink: /Java&Jsp&Spring/xss
 ---
 
-# XSS
+# Why?
 
 웹 애플리케이션을 개발한다면 기본적으로 생각해봐야할 보안으로 XSS(Cross Site Scripting) 방지가 있다. 어떤 방법들로 XSS방지를 할 수 있는지 확인해보고 아래 두 블로그를 참고하여 로컬에서 직접 적용해본 내용을 정리하고 넘어가기 위해 글을 작성하게 되었다.
 
 1) [이동욱님 블로그](https://jojoldu.tistory.com/470)
 2) [오명운님 블로그](https://homoefficio.github.io/2016/11/21/Spring%EC%97%90%EC%84%9C-JSON%EC%97%90-XSS-%EB%B0%A9%EC%A7%80-%EC%B2%98%EB%A6%AC-%ED%95%98%EA%B8%B0/)
 
+## XSS?
+
+XSS(Cross-Site Scripting) 이란 웹 애플리케이션에서 일어나는 취약점으로 관리자가 아닌 권한이 없는 사용자가 웹 사이트에 스크립트를 삽입하는 공격 기법이다. 구체적인 내용은 위키백과를 참고해보자 ([위키백과](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85))
+
 ## lucy-xss-servlet-filter
 
-XSS(Cross Site Scripting) 방지를 위해 널리 쓰이는 방법 중 하나인 lucy-xss-servlet-filter는 Servlet Filter 단에서 '<' 등의 태그나 특수 문자를 &lt 등으로 변환해주며 여러 가지 관련 설정을 편리하게 설정할 수 있도록 도와준다.
+XSS(Cross Site Scripting) 방지를 위해 널리 쓰이는 오픈소스 중 하나인 lucy-xss-servlet-filter는 Servlet Filter 단에서 '<' 등의 태그나 특수 문자를 &lt 등으로 변환해주며 여러 가지 관련 설정을 편리하게 설정할 수 있도록 도와준다. 이 필터를 프레임워크에 등록하는 하나의 방법이 있다.
 
-그러나 그 처리가 form-data에 대해서만 적용되고, JSON에 대해서는 처리해주지 않는다. 그렇기 때문에 JSON을 주고 받는 API 서버의 경우에는 직접 처리가 필요하다.
+그러나 그 처리가 form-data형식에서만 적용이 되고 그 외 데이터 형태(application-Json, text data..) 대해서는 처리해주지 않는다. 그렇기 때문에 JSON을 주고 받는 API 서버의 경우에는 직접 처리가 필요하다.
 
 JSON데이터의 처리가 필요했기 때문에 위 필터는 적용하지 않고 ObjectMapper를 통해 처리할 수 있도록 적용해보았다.
 
@@ -68,6 +72,7 @@ public class XssCharacterEscapes extends CharacterEscapes {
 
 
 
+HttpMessageConverter는 POST나 PUT등 Body로 데이터가 들어오는 내용을 변환시킬때 사용되는 클래스이다.
 HttpMessageConverter를 Bean으로 등록한다.
 
 ```java
@@ -121,7 +126,7 @@ requestBody에 아래와 같은 내용을 추가해서 보낼 경우,
 
 변환되는 모습을 확인할 수 있다.
 
-<img src = "/img/xss_re1.png" class="middle-image"/>
+<img src = "/img/xss_re.png" class="middle-image"/>
 
 
 
