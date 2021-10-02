@@ -12,6 +12,8 @@ permalink: /review/refactoring
 
 
 
+## 읽은 소감
+
 이 책은 전반적으로 리팩터링이 무엇인지 설명하고, 1-2챕터에서는 왜 리팩터링이 필요한지에 대해 설명하고 있다. 2판은 자바스크립트로 예시가 짜여있고, 1판은 자바로 짜여있다. 자바가 익숙해도 1판은 좀 오래된 내용이라 2판을 읽어보는게 좋을것 같다. 앞부분 읽다보면 예시가 짧게 되어 있고, 어떤 부분을 고치고 해결해야 하는지 설명이 잘 되어 있다.
 
 
@@ -24,11 +26,11 @@ permalink: /review/refactoring
 
 
 
-책 소개)
+## 책 소개
 
-[드림 앨리 유튜브] (https://www.youtube.com/watch?v=WF_bzlpaW0I)
+[드림 앨리 유튜브](https://www.youtube.com/watch?v=WF_bzlpaW0I)
 
-[Refactoring 2판] (https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=236186172)
+[Refactoring 2판](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=236186172)
 
 
 
