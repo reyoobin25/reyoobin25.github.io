@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Programmers] - 8번"
+title: "[Programmers] 8번"
 date: 2019-06-10 16:47:00
 categories: Algorithm
 permalink: /programmers/8번
