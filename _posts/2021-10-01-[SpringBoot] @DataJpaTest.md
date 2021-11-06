@@ -2,7 +2,7 @@
 layout: post
 title: "[SpringBoot] @DataJpaTest"
 date: 2021-10-01 14:00:00
-categories: JAVA&JSP&SPRING
+categories: Java&Jsp&Spring
 permalink: /springboot/datajpatest
 ---
 
