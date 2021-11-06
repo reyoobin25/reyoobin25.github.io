@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "[Programmers] 숫자 문자열과 영단어"
-date: 2021-10-01 14:00:00
+date: 2020-08-14 14:00:00
 categories: Algorithm
 permalink: /programmers/10번
 ---
+
+
 
 # 프로그래머스 - 숫자 문자열과 영단어
 
@@ -32,12 +34,4 @@ public class Algo1 {
     }
 }
 ```
-
-
-
-
-
-
-
-
 

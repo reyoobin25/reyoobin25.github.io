@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring] SpringBoot XSS 방지"
+title: "[SpringBoot] SpringBoot XSS 방지"
 date: 2021-07-03 14:00:00
 categories: Java&Jsp&Spring
 permalink: /Java&Jsp&Spring/xss

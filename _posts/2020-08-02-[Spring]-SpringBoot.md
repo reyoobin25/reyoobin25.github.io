@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring] springBoot"
+title: "[SpringBoot] springBoot"
 date: 2020-08-02 14:00:00
 categories: Java&Jsp&Spring
 permalink: /Java&Jsp&Spring/springBoot
