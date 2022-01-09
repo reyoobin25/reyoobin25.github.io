@@ -16,7 +16,7 @@ permalink: /Java&Jsp&Spring/flyway
 
 **flyway는 데이터베이스의 형상관리를 목적으로 하는 툴** 이다. git을 통해 소스코드를 관리하는 것의 데이터베이스 버전으로 볼 수 있다. flyway는 데이터베이스의 DDL의 이력을 쌓아 DDL이 어떻게 변화되었는지 관리하는 툴로 사용되고 있다. 또한 flyway는 CLI, API, Maven, Gradle 4가지 방법으로 컨트롤이 가능하다고 한다.
 
-[Flyway 공식 사이트][https://flywaydb.org/documentation/getstarted/how]
+[Flyway 공식 사이트](https://flywaydb.org/documentation/getstarted/how)
 
 
 
@@ -43,9 +43,9 @@ flyway:
 
 - 필요 시 아래 spring에서 제공하고 있는 공식문서를 참조하면 된다.
 
-  [spring 공식 docs][https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#application-properties.data-migration]
+  [spring 공식 docs](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#application-properties.data-migration)
 
-  [Baeldung 문서][https://www.baeldung.com/database-migrations-with-flyway]
+  [Baeldung 문서](https://www.baeldung.com/database-migrations-with-flyway)
 
 
 
@@ -73,7 +73,8 @@ flyway에서는 데이터베이스에 일어나는 모든 행위를 마이그레
 sh create_migration.sh user dev create_user_table 
 ```
 
-위의 명령어를 실행하게 되면 user-api 모듈의 resources/db/migration/dev 폴더에 `V{timestamp}__create_user_table.sql`파일이 생성된다.
+위의 명령어를 실행하게 되면 
+user-api 모듈의 resources/db/migration/dev 폴더에 `V{timestamp}__create_user_table.sql`파일이 생성된다.
 
 
 
