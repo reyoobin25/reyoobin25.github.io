@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[SpringBoot] custome annotation으로 검증하기"
+title: "[SpringBoot] custom annotation으로 검증하기"
 date: 2022-01-12 14:00:00
 categories: Java&Jsp&Spring
-permalink: /Java&Jsp&Spring/custome-validation
+permalink: /Java&Jsp&Spring/custom-validation
 ---
 
 
