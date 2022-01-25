@@ -193,28 +193,28 @@ Job의 경우 코드가 거의 없는 것을 볼 수 있다. Step은 실제 Batc
 
 ```java
 @RequiredArgsConstructor
-@Configuration
+@Configuration // Spring Batch의 모든 Job은 @Configuration으로 등록해서 사용
 public class BatchApplication {
-	Logger logger = LoggerFactory.getLogger(getClass());
-	
-	private final JobBuilderFactory jobBuilderFactory;
-	private final StepBuilderFactory stepBuilderFactory;
-	
-	 @Bean
-	 public Job testJob() {
-        return jobBuilderFactory.get("testJob") 
-                .start(testStep1(null)) 
+    Logger logger = LoggerFactory.getLogger(getClass());
+
+    private final JobBuilderFactory jobBuilderFactory;
+    private final StepBuilderFactory stepBuilderFactory;
+
+    @Bean
+    public Job testJob() {
+        return jobBuilderFactory.get("testJob")
+                .start(testStep1(null))
                 .build();
-	 }
-	 
-	 @Bean
-     @JobScope
-     public Step testStep1(@Value("#{jobParameters[requestDate]}") String requestDate) {
-        return stepBuilderFactory.get("testStep1") 
-                .tasklet((contribution, chunkContext) -> { 
-                	logger.info(">>>Step11111!!!"); 
-                    logger.info(">>>request Date = {}", requestDate); 
-                    return RepeatStatus.FINISHED; 
+    }
+
+    @Bean
+    @JobScope
+    public Step testStep1(@Value("#{jobParameters[paramDate]}") String paramDate) {
+        return stepBuilderFactory.get("testStep1")
+                .tasklet((contribution, chunkContext) -> {
+                    logger.info(">>>스텝11111!!!");
+                    logger.info(">>>paramDate = {}", paramDate);
+                    return RepeatStatus.FINISHED;
                 })
                 .build();
     }
@@ -245,13 +245,15 @@ JobExecution은 JobInstance와 별로 다르지 않다. 한번에 이해할 수 
 
 위 3가지 이유들이 궁금해서 위 책을 읽었고, 지금까지 읽은 내용을 토대로 오피스 내에서 시도해볼 만한 가치가 있다고 판단되는 것을 한번 적어보았다. (물론, 지극히 개인적인 생각이다.)
 
- ### 스케줄 Refactoring
+### 스케줄 Refactoring
 
 한 스케줄을 예시로 들어보자.
 
 간단하게 스케줄에 대해 설명을 해보자면 등록된 A사, B사의 데이터를 조회, 해당 데이터를 통해 타사의 데이터 파싱, 파싱된 데이터로 업데이트하는 구조의 비동기 스케줄이 있다. 해당 스케줄의 경우, 실패 시 전체 재실행되는 스케줄이다. 
 
-책을 좀 더 읽다보면, 배치의 병렬화 과정에 대한 설명이 나온다. 해당 내용을 이 스케줄에 접목시켜 생각해본다면, 등록된 A사의 데이터 조회와 B사의 데이터를 분리해서 각각 조회를 한다면, 그 이후의 로직은 서로 연관없이 진행될 수 있을 것 같다는 생각이 들었다. 병렬 스텝으로 진행시키고, 중간에 실패가 뜨면 각 스텝별로 retry를 하거나 따로 기록을 하도록 처리 하는 것이다.
+등록된 A사의 데이터 조회와 B사의 데이터를 따로 조회할 수 있다는 생각이 들었다. 그렇다면 조회하는 부분을 분리해서 조회를 해오게 된다면, 그 이후의 파싱하고 저장하는 부분까지 하나의 스텝으로 묶어 서로 연관없이 진행될 수 있을 것 같다는 생각이 들었다. 
+
+스프링배치의 경우, 스텝을 동시에 실행 시킬 수 있기 때문에 각각의 분리된 스텝으로 진행하게 된다면, 전반적인 처리 성능을 높일 수 있지 않을까라는 생각을 했다. 또한 오류 이후 재실행 시 각각의 스텝별로 수동실행이 가능하지 않을까 라는 생각이 들어 아래와 같이 그려보게 되었다.
 
 <img src = "/img/batch_7.PNG" class="middle-image"/>
 
@@ -259,7 +261,9 @@ JobExecution은 JobInstance와 별로 다르지 않다. 한번에 이해할 수 
 
 ### 대용량 일회성 일괄 처리 위임
 
-최근에 약 50만건정도 하는 데이터를 일괄 삭제하는 일회성 잡을 진행한 적이 있다. 해당 잡은 서비스에 문제가 될 수 있다고 판단되어 몇일에 나눠 진행되었다. 이러한 대량 데이터 처리를 위임하여 아래와 같이 처리한다면, 서비스 중인 애플리케이션에 영향을 주지 않고, 더 빠른 결과를 도출해 낼 수 있지 않을까 생각했다.
+최근에 약 50만건정도 하는 데이터를 일괄 삭제하는 일회성 잡을 진행한 적이 있다. 해당 잡은 운영중인 서비스에 문제가 될 수 있다고 판단되어 몇일에 나눠 진행되었다. 이러한 대량 데이터 처리를 배치 서버에 위임하여 아래와 같이 처리한다면, 서비스 중인 애플리케이션에 영향을 주지 않고, 더 빠른 결과를 도출해 낼 수 있지 않을까 생각했다.
+
+chunk의 사이즈를 더욱 키울 수 있고, 더 많은 스레드로 확장시켜 돌리게 된다면 처리 성능이 오를 수 있지 않을까 싶었다.
 
 <img src = "/img/batch_6.PNG" class="middle-image"/>
 
